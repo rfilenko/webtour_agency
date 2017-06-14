@@ -41,9 +41,9 @@ p {
 }
 
 .btn:hover {
-  background-color: #ededed !important;
-  color: #3c3c3c !important;
-  border: 1px solid #fff !important;
+  background-color: #ededed;
+  color: #3c3c3c;
+  cursor: pointer;
 }
 
 /* nav */
@@ -76,6 +76,17 @@ p {
 .header .btn {
   border-radius: 0;
   margin: 25px 20px;
+  padding: .5em 1em;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #064b86;
+  border-color: #064b86;
+}
+.btn-success:hover {
+    color: #fff;
+    background-color: #4d964d;
+    border-color: #4d964d;
 }
 
 .header img {
@@ -124,8 +135,12 @@ p {
   width: 80px;
   padding: 25px 20px;
   background-color: #6699cc;
+    cursor: pointer;
 }
-
+.services i:hover {
+  transition: 0.9s;
+  transform: rotateY(180deg);
+}
 .services p {
   color: #737373;
   padding-bottom: 40px;
@@ -292,6 +307,42 @@ footer .touch i {
   margin-bottom: 10px;
   margin-right: 5px;
 }
+footer .touch i:hover {
+  transition: 0.9s;
+  transform: rotateY(360deg);
+  cursor: pointer;
+}
+footer .fa-facebook:hover {
+  color: #3B5998;
+  border:1px solid #3B5998;
+  outline: 1px solid #3B5998;
+}
+footer .fa-twitter:hover {
+  color: #00c4f8;
+  border:1px solid #00c4f8;
+  outline: 1px solid #00c4f8;
+}
+footer .fa-linkedin:hover {
+  color: #0083BE;
+  border:1px solid #0083BE;
+  outline: 1px solid #0083BE;
+}
+footer .fa-pinterest:hover {
+  color: #E08587;
+  border:1px solid #E08587;
+  outline: 1px solid #E08587;
+}
+footer .fa-youtube:hover {
+  color: #E94639;
+  border:1px solid #E94639;
+  outline: 1px solid #E94639;
+}
+footer .fa-github:hover {
+  color: #0D2636;
+  border:1px solid #0D2636;
+  outline: 1px solid #0D2636;
+}
+
 
 footer input {
   height: 40px;
@@ -306,6 +357,7 @@ footer input {
 footer .btn {
   padding: 10px 5px 10px;
   margin: -3px 0 0 5px;
+  padding: .6em 2em;
 }
 
 @media (max-width: 768px) {
